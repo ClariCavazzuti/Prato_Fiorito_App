@@ -1,11 +1,8 @@
 package org.example;
 
 import javax.swing.*;
+import java.awt.*;
 
-/**
- * Hello world!
- *
- */
 public class App 
 {
     public static void main( String[] args )
@@ -15,9 +12,9 @@ public class App
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             frame.setResizable(false);
 
-            int rows = 10;
-            int cols = 10;
-            int numMines = 10;
+            int rows = 30;
+            int cols = 30;
+            int numMines = 150;
 
             GamePanel gamePanel = new GamePanel(rows, cols, numMines);
             frame.add(gamePanel);
